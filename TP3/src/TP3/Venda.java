@@ -1,6 +1,5 @@
-package modelo;
+package TP3;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Venda {
@@ -9,18 +8,8 @@ public class Venda {
 	private String codigoProd;
 	private String codigoVenda;
 	private String nomeVendedor;
-	private SimpleDateFormat data;
+	private Date data;
 	private double valor;
-	
-	public Venda(String nP, String cP, String cV, String nV, SimpleDateFormat simpleDateFormat, double v) {
-		this.nomeProd = nP;
-		this.codigoProd = cP;
-		this.codigoVenda = cV;
-		this.nomeVendedor = nV;
-		this.data = simpleDateFormat;
-		this.valor = v;
-		
-	}
 	
 	public String getNomeProd() {
 		return nomeProd;
@@ -46,10 +35,10 @@ public class Venda {
 	public void setNomeVendedor(String nomeVendedor) {
 		this.nomeVendedor = nomeVendedor;
 	}
-	public SimpleDateFormat getData() {
+	public Date getData() {
 		return data;
 	}
-	public void setData(SimpleDateFormat data) {
+	public void setData(Date data) {
 		this.data = data;
 	}
 	public double getValor() {
