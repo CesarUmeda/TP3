@@ -1,14 +1,14 @@
-package TP3;
+package modelo;
 
-public class Colar extends Produto{
+public class Pulseira extends Produto{
 	
 private int tamanho;
 	
-	public Colar() {
+	public Pulseira() {
 		super();
 	}
 	
-	public Colar(String nP, String cP, String t, String c, String m, double v, int tm) {
+	public Pulseira(String nP, String cP, String t, String c, String m, double v, int tm) {
 		
 		this.nomeProd = nP;
 		this.codigoProd = cP;

@@ -1,25 +1,25 @@
-package TP3;
+package modelo;
 
-public class Vendedor extends Pessoa {
+public class Cliente extends Pessoa {
 	
-	private String matricula;
-	private double salario;
-	
-	public Vendedor() {
+	public Cliente() {
 		super();
 	}
 	
-	public Vendedor(String n, String c, String e, String r, Telefone tel, String m, double s) {
+	public Cliente(String n, String c, String e, String r, Telefone tel) {
 		
 		this.nome = n;
 		this.cpf = c;
 		this.endereco = e;
 		this.rg = r;
 		this.numTel = tel;
-		matricula = m;
-		salario = s;
-		
+				
 	}
+	
+	public String toString() {	
+		return "Nome do Cliente: " + nome;
+	}
+	
 	
 	public String getNome() {
 		return nome;
@@ -28,7 +28,6 @@ public class Vendedor extends Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
 	
 	
 	public String getCpf() {
@@ -40,7 +39,6 @@ public class Vendedor extends Pessoa {
 	}
 	
 	
-	
 	public String getEndereco() {
 		return endereco;
 	}
@@ -48,7 +46,6 @@ public class Vendedor extends Pessoa {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	
 	
 	
 	public String getRg() {
@@ -60,32 +57,20 @@ public class Vendedor extends Pessoa {
 	}
 	
 	
-	
 	public Telefone getNumTel() {
 		return numTel;
 	}
 
+
 	public void setNumTel(Telefone numTel) {
 		this.numTel = numTel;
-	} 
-
-	
-	
-	public String getMatricula() {
-		return matricula;
 	}
-
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
+	
+	public void status() {
+		System.out.println("Informações");
+		System.out.println("Nome: " + this.nome);
 	}
 	
 	
-
-	public double getSalario() {
-		return salario;
-	}
-
-	public void setSalario(double salario) {
-		this.salario = salario;
-	}
+	
 }
