@@ -1,4 +1,4 @@
-package TP3;
+package modelo;
 
 public class Anel extends Produto {
 	
@@ -16,7 +16,7 @@ public class Anel extends Produto {
 		this.cor = c;
 		this.material = m;
 		this.valor = v;
-		tamanho = tm;
+		this.tamanho = tm;
 		
 	}
 	

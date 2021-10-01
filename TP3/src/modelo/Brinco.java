@@ -1,14 +1,20 @@
-package TP3;
+package modelo;
 
-public abstract class Produto {
+public class Brinco extends Produto{
 		
-	protected String nomeProd;
-	protected String codigoProd;
-	protected String tipo;
-	protected String cor;
-	protected String material;
-	protected double valor;
+	public Brinco() {
+		super();
+	}
 	
+	public Brinco(String nP, String cP, String t, String c, String m, double v) {
+		
+		this.nomeProd = nP;
+		this.codigoProd = cP;
+		this.tipo = t;
+		this.cor = c;
+		this.material = m;
+		this.valor = v;
+	}
 	
 	public String getNomeProd() {
 		return nomeProd;
@@ -46,6 +52,4 @@ public abstract class Produto {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
-	
 }
